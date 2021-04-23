@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.graphics.Point;
 import android.hardware.Camera;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -13,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.cj.videoeditor.Constants;
-import com.example.cj.videoeditor.MyApplication;
 import com.example.cj.videoeditor.R;
 import com.example.cj.videoeditor.camera.SensorControler;
 import com.example.cj.videoeditor.gpufilter.SlideGpuFilterGroup;
@@ -24,6 +22,8 @@ import com.example.cj.videoeditor.widget.FocusImageView;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import androidx.annotation.Nullable;
 
 /**
  * Created by cj on 2017/7/25.

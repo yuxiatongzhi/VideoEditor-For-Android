@@ -1,11 +1,10 @@
 package com.example.cj.videoeditor.activity;
 
-import android.app.Activity;
-import android.os.Build;
 import android.os.Looper;
-import android.support.v7.app.AppCompatActivity;
 
 import com.example.cj.videoeditor.widget.LoadingDialog;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by cj on 2017/10/16.
