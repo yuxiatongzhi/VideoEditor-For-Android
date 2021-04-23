@@ -19,5 +19,13 @@
         android:textSize="12sp"
         android:textColor="#ffffff"
         android:text="00:00"/>
+    <ImageView
+        android:id="@+id/is_true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/selector_btn_image_choose" />
 
 </RelativeLayout>

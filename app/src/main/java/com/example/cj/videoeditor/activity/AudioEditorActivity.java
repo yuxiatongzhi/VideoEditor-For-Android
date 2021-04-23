@@ -2,6 +2,7 @@ package com.example.cj.videoeditor.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ public class AudioEditorActivity extends BaseActivity implements View.OnClickLis
         findViewById(R.id.audio_select).setOnClickListener(this);
         findViewById(R.id.pcm_to_audio).setOnClickListener(this);
         findViewById(R.id.audio_mix).setOnClickListener(this);
+
     }
 
     @Override
@@ -33,7 +35,7 @@ public class AudioEditorActivity extends BaseActivity implements View.OnClickLis
         switch (v.getId()){
             case R.id.video_select:
                 //去选择视频
-                startActivity(new Intent(AudioEditorActivity.this , VideoSelectActivity.class));
+                VideoSelectActivity.openActivity(this);
                 break;
             case R.id.audio_select:
                 startActivity(new Intent(AudioEditorActivity.this , AudioSelectActivity.class));

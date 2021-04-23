@@ -56,6 +56,7 @@ public class VideoPreviewView extends GLSurfaceView implements GLSurfaceView.Ren
     public void setVideoPath(List<String> paths){
         mMediaPlayer.setDataSource(paths);
     }
+
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
         mDrawer.onSurfaceCreated(gl,config);
@@ -171,6 +172,12 @@ public class VideoPreviewView extends GLSurfaceView implements GLSurfaceView.Ren
      * */
     public int getVideoDuration(){
         return mMediaPlayer.getCurVideoDuration();
+    }
+    /**
+     * 获取当前播放的视频的列表
+     * */
+    public List<VideoInfo> getVideoInfo(){
+        return mMediaPlayer.getVideoInfo();
     }
 
     /**
